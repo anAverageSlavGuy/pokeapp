@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## 📷 About The Project
 
-[![Pokeapp Screen Shot][project-screenshot]](https://github.com/anAverageSlavGuy/pokeapp)
+[![Product Name Screen Shot][project-screenshot]](https://github.com/anAverageSlavGuy/pokeapp)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -124,3 +124,5 @@ You can also create a new team assigning a unique name and you can immediately t
 Pokemons owned by the team will always be shown, so you always know which ones you have :smiley:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+  
+[project-screenshot]: images/project-screenshot.png
