@@ -68,8 +68,8 @@ Read on and follow the step-by-step guide.
 
 ### 📚 Prerequisites
 
-
-* Install Node JS and NPM.
+* Used: node v18.12.1 (npm v8.19.2)
+* Install Node JS( 18+ ) and NPM (8+). 
   ```sh
   npm install npm@latest -g
   ```
