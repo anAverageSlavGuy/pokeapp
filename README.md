@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## 📷 About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/anAverageSlavGuy/pokeapp)
+[![Product Name Screen Shot][project-screenshot]](https://github.com/anAverageSlavGuy/pokeapp)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
