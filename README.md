@@ -9,7 +9,7 @@
 <h3 align="center">POKEMON APP</h3>
 
   <p align="center">
-    Project built using open source [Pokemon API](https://pokeapi.co/)
+    Project built using open source <a href="https://pokeapi.co">Pokemon API</a>
     <br />
     <a href="https://github.com/anAverageSlavGuy/readme-template"><strong>Explore the docs »</strong></a>
     <br />
