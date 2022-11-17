@@ -1,0 +1,43 @@
+// Get list of all teams
+GET http://localhost:5000/team HTTP/1.1
+
+
+// Create a new team
+###
+POST http://localhost:5000/team HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "Pippo team"
+}
+
+
+// Update team name
+###
+PUT http://localhost:5000/team/1 HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "Team Black"
+}
+
+
+// Delete team by id
+###
+DELETE http://localhost:5000/team/5 HTTP/1.1
+
+
+// Create pokemon
+###
+POST http://localhost:5000/pokemon/3 HTTP/1.1
+Content-type: application/json
+
+{
+    "id": 446,
+    "name": "munchlax",
+    "baseExp": 78,
+    "imageFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/446.svg",
+    "imageBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/446.svg",
+    "abilities": "pickup, thick-fat, gluttony",
+    "types": "normal"
+}

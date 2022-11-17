@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Team {
+  id       Int           @id @default(autoincrement())
+  name     String        @unique
+  pokemons TeamPokemon[]
+}
+
+model Pokemon {
+  id         Int           @id @unique @default(autoincrement())
+  name       String        @unique
+  baseExp    Int
+  imageFront String
+  imageBack  String
+  abilities  String
+  types      String
+  teams      TeamPokemon[]
+}
+
+model TeamPokemon {
+  pokemonId  Int
+  teamId     Int
+  assignedAt DateTime @default(now())
+  team       Team     @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  pokemon    Pokemon  @relation(fields: [pokemonId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([pokemonId, teamId])
+}
