@@ -54,11 +54,17 @@ export default function FilterPokemon({ data, callBack }: TypesList) {
   }, [])
 
 
+
+  React.useEffect(() => {
+    callBack(pokemonTypeList);
+  }, [pokemonTypeList])
+
+
+
   const handleChange = (event: SelectChangeEvent<typeof pokemonTypeList>) => {
     const {
       target: { value },
     } = event;
-    callBack(pokemonTypeList);
     setPokemonTypeList(
       // On autofill we get a stringified value.
       typeof value === 'string' ? value.split(',') : value,
