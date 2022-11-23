@@ -245,3 +245,10 @@ a {
         transform:rotate(360deg); 
     } 
 }
+
+
+/* FILTER POKEMON COMPONENT */
+.tools {
+    padding: 8px 8px 0px 8px;
+    display: flex;
+}

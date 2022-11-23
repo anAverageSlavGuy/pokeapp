@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon ./server/index.ts",
+    "dev": "nodemon ./server/index.ts",
     "build": "npm run build --prefix ./client",
     "start": "concurrently \"ts-node ./server/index.ts\" \"npm run start --prefix ./client\""
   },

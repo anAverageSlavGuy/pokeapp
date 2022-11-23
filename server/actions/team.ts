@@ -5,6 +5,9 @@ import prisma from '../lib/prisma'
 const getTeams = async () => {
     const teams = await prisma.team.findMany({
         include: { pokemons: { include: { pokemon: true } } },
+        orderBy: {
+            createdAt: 'desc'
+        }
     })
     const result = teams.map((team) => {
         return { ...team, pokemons: team.pokemons.map((pokemon) => pokemon.pokemon) }

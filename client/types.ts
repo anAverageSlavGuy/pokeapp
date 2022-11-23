@@ -1,7 +1,10 @@
 export type Team = {
     id: number
     name: string
+    createdAt: Date
     pokemons: Pokemon[]
+    pokemonTypes?: string[]
+    visible?: boolean
 };
 
 export type TeamParameters = {
