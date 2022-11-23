@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Team } from '../../types';
+import { Team, Pokemon } from '../../types';
 import PokemonList from '../../components/PokemonList'
 import FilterPokemon from '../../components/FilterPokemon'
 import ToggleTeamsOrder from '../../components/ToggleTeamsOrder'
@@ -85,7 +85,6 @@ export default function List({ data }: Props) {
 
     }
 
-
     return (
         <Container maxWidth='xl' sx={{ width: '100%' }}>
             <div className="tools">
@@ -113,7 +112,7 @@ export default function List({ data }: Props) {
                             <Divider />
                             {team.pokemons.length ?
                                 (<Box className="team-body" sx={{ display: 'flex', flexDirection: { xs: 'column', lg: 'row' } }}>
-                                    <PokemonList pokemons={team.pokemons} />
+                                    <PokemonList teamId={team.id} pokemons={team.pokemons} canDelete={false}/>
 
                                     <Box className="info" sx={{ flexDirection: { xs: 'row', lg: 'column' }, alignItems: { xs: 'flex-start', lg: 'center' } }}>
                                         <div className="base-exp">

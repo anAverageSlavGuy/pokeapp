@@ -36,6 +36,10 @@ export default function TeamDetails({ id, name, pokemons }: Team) {
         setOpenEdit(true);
     };
 
+    const handlePokemonDelete = (pokemons: Pokemon[]) => {
+        setPokemonList(pokemons);
+    };
+
 
     const handleTeamEditClickAway = async () => {
         if (openEdit && newName != '' && newName != name) {
@@ -83,7 +87,7 @@ export default function TeamDetails({ id, name, pokemons }: Team) {
 
                     <CatchPokemon teamId={id} callBack={handleCatchCallback} />
                     <div style={{ marginBottom: '32px', width: '100%', minHeight: '200px' }}>
-                        <PokemonList pokemons={pokemonList} title="Pokemon List" />
+                        <PokemonList teamId={id} pokemons={pokemonList} title="Pokemon List" handleDelete={handlePokemonDelete} />
                     </div>
                     <Button className="delete-team-button" variant="contained" onClick={handleClick}>Delete Team</Button>
 

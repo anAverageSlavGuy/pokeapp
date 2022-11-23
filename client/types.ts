@@ -12,6 +12,12 @@ export type TeamParameters = {
     name: string
 };
 
+export type TeamPokemonParameters = {
+    teamId: number
+    pokemonId: number
+    assignedAt: Date
+};
+
 export type Pokemon = {
     id: number
     name: string

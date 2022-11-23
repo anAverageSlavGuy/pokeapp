@@ -13,3 +13,9 @@ export type PokemonCreateInput = {
     types: string
     teams: object
 };
+
+
+export type TeamPokemonDeleteInput = {
+    teamId: number,
+    pokemonId: number
+};

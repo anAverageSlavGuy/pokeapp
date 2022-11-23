@@ -204,7 +204,10 @@ a {
 }
 
 
-
+.delete-pokemon-button:hover {
+    color: red;
+    cursor: pointer;
+}
 
 
 /* CATCH POKEMON COMPONENT */

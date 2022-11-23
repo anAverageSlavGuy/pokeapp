@@ -40,6 +40,10 @@ export default function Create() {
     return pokemon;
   }
 
+  const handlePokemonDelete = (pokemons: Pokemon[]) => {
+    setPokemons(pokemons);
+};
+
   return (
     <Container fixed sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '32px', maxWidth: '360px' }}>
       <TextField
@@ -70,7 +74,7 @@ export default function Create() {
             ><b>{data.name}</b> <br />successfully created</Typography>
           }
           <div style={{ marginBottom: '32px', width: '100%', minHeight: '200px' }}>
-            <PokemonList pokemons={pokemons} title="Pokemon List" />
+            <PokemonList teamId={data.id} pokemons={pokemons} title="Pokemon List" handleDelete={handlePokemonDelete} />
           </div>
         </>
       }
