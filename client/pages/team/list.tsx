@@ -70,12 +70,12 @@ export default function List({ data }: Props) {
 
         if (state == "asc") {
             newTeams = [...teams].sort(function (a, b) {
-                return new Date(a.id) - new Date(b.id)
+                return new Date(a.createdAt) - new Date(b.createdAt)
             })
 
         } else {
             newTeams = [...teams].sort(function (a, b) {
-                return new Date(b.id) - new Date(a.id)
+                return new Date(b.createdAt) - new Date(a.createdAt)
             })
         }
 
